@@ -1,0 +1,39 @@
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+.font-1-xxl-h{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.font-1-xxl-m{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-1-xl{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+
+.font-2-m{
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 0.94rem;
+  line-height: 1.666;
+}
+
+.font-2-s{
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1;
+  letter-spacing: 5px;
+}
