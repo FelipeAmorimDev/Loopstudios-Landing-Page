@@ -1,5 +1,5 @@
 /* Header */
-.header-bg{
+.header-bg {
   height: 100%;
   width: 100%;
   background-image: url("../../images/desktop/image-hero.jpg");
@@ -7,40 +7,48 @@
   background-size: cover;
 }
 
-.header-mask{
+.header-mask {
   background-color: rgba(2, 2, 2, 0.4);
   transition: .3s;
 }
 
-.header-container{
+.header-container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 64px 24px 146px 24px;
 }
 
-.top-header{
+.top-header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  position: relative;
 }
 
-.top-header .nav-list{
+.top-header>a {
+  z-index: 22;
+}
+
+.top-header .nav-list {
   display: flex;
   gap: 32px;
 }
 
-.menu-hb{
+.menu-hb {
   display: none;
   background-image: url("../../images/icon-hamburger.svg");
-  background-size: auto;
+  background-size: cover;
   background-color: transparent;
-  width: 24px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: none;
   cursor: pointer;
+  z-index: 22;
+  transition: .3s;
+
 }
 
-.header-container p{
+.header-container p {
   max-width: 12ch;
   text-transform: uppercase;
   margin-top: 130px;
@@ -48,47 +56,90 @@
   border: 2px solid white;
 }
 
-.header-container .nav a::after{
+.header-container .nav a::after {
   content: "";
   width: 0px;
   height: 2px;
-  background:#fff;
+  background: #fff;
   display: block;
   margin: 0 auto;
 }
 
-.header-container  .nav a:hover::after{
+.header-container .nav a:hover::after {
   transition: width .3s;
   width: 50%;
 }
 
-@media (max-width:800px){
+/* Nav Mobile */
 
-  .menu-hb{
-  display: block;
+
+
+@media (max-width:800px) {
+  .header-container {
+    padding: 40px 24px 146px 24px;
   }
-  .nav{
-    display: none;
+
+  .menu-hb {
+    display: block;
   }
-  .header-container p{
+
+  .nav .nav-list {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    width: 0px;
+    height: calc(100vh - 140px);
+    background-color: black;
+    left: -25px;
+    top: -40px;
+    padding: 223px 25px 0px 25px;
+    transition: width .3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .nav .nav-list li+li {
+    margin-top: 24px;
+  }
+
+  .header-container .nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .nav.active .nav-list {
+    display: block;
+    width: 100%;
+    visibility: visible;
+
+
+  }
+
+  .header-container p {
     margin: 163px auto 0px auto;
   }
-  .header-bg{
+
+  .header-bg {
     background-size: cover;
     background-position: center;
   }
-  .header-container p{
+
+  .header-container p {
     padding: 16px;
   }
 
 }
-@media (max-width:375px){
 
-  .header-bg{
-  min-height: 100vh;
+@media (max-width:375px) {
+
+  .header-bg {
+    min-height: 100vh;
   }
-  .header-mask{
+
+  .header-mask {
     height: 100vh;
   }
-  
+
 }
