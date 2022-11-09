@@ -498,6 +498,7 @@ a{
   margin: 0 auto;
   gap: 24px;
   padding: 44px 20px;
+  align-items: center;
  }
 
  .redes-sociais{
@@ -515,6 +516,10 @@ a{
   color: rgba(255, 255, 255, 0.045);
   
  }
+ .footer-container > a img{
+  max-width: 144px;
+}
+
 
  @media (max-width:800px){
   .footer-container{
@@ -533,6 +538,6 @@ a{
   gap: 16px;
 
   }
-
+ 
 
  }
