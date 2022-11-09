@@ -119,6 +119,14 @@ a{
     padding: 16px;
   }
 }
+@media (max-width:375px){
+  .header-bg{
+  min-height: 100vh;
+  }
+  .header-mask{
+    height: 100vh;
+  }
+}
 /* Sobre Empresa */
 .main{
   margin: 150px 0px 184px 0px;
