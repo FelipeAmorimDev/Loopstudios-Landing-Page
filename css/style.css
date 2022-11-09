@@ -217,7 +217,7 @@ a{
  @media (max-width:600px){
   .sobre-empresa picture{
   max-width: 327px;
-  margin: 0 auto;
+  margin: 0 autogit ;
   }
  }
 
@@ -235,7 +235,7 @@ a{
  .list-item{
   width: 256px;
   height: 450px;
-  background-image: url("../../images/desktop/image-deep-earth.jpg");
+  background-image: url("../images/desktop/image-deep-earth.jpg");
   display: flex;
   cursor: pointer;
   transition: .3s;
@@ -364,7 +364,7 @@ a{
      .list-item{
       width:initial;
       height: initial;
-      background-image: url("../../images/mobile/image-deep-earth.jpg");
+      background-image: url("../images/mobile/image-deep-earth.jpg");
       min-height: 240px;
       
     }
