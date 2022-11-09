@@ -1,5 +1,5 @@
 const menuhb = document.querySelector(".menu-hb")
-menuhb.style.back
+
 
 function toogleMenu() {
   const nav = document.querySelector(".nav")
