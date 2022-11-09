@@ -41,9 +41,16 @@ a{
 /* Header */
 
 .header-bg{
+  height: 100%;
+  width: 100%;
   background-image: url("../images/desktop/image-hero.jpg");
   background-position: top right;
   background-size: cover;
+}
+
+.header-mask{
+  background-color: rgba(2, 2, 2, 0.4);
+  
   transition: .3s;
 }
 
@@ -77,7 +84,7 @@ a{
   max-width: 12ch;
   text-transform: uppercase;
   margin-top: 130px;
-  padding: 40px 40px 28px 40px;
+  padding: 40px 40px 2px 40px;
   border: 2px solid white;
 }
 
@@ -312,6 +319,18 @@ a{
   font-weight: 300;
   font-size: 2rem;
   max-width: 10ch;
+}
+
+.list-item-mask{
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.list-item-mask h3{
+place-self:flex-end;
 }
 
  .nossa-criacao h2{
