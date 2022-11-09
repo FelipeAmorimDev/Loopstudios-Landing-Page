@@ -12,7 +12,7 @@
 .list-item {
   width: 256px;
   height: 450px;
-  background-image: url("../images/desktop/image-deep-earth.jpg");
+  background-image: url("../../images/desktop/image-deep-earth.jpg");
   display: flex;
   cursor: pointer;
   transition: .6s;
@@ -94,15 +94,15 @@
 }
 
 .night {
-  background-image: url("../images/desktop/image-night-arcade.jpg");
+  background-image: url("../../images/desktop/image-night-arcade.jpg");
 }
 
 .soccer {
-  background-image: url("../images/desktop/image-soccer-team.jpg");
+  background-image: url("../../images/desktop/image-soccer-team.jpg");
 }
 
 .thegrid {
-  background-image: url("../images/desktop/image-grid.jpg");
+  background-image: url("../../images/desktop/image-grid.jpg");
 }
 
 .thegrid h3 {
@@ -110,19 +110,19 @@
 }
 
 .fromup {
-  background-image: url("../images/desktop/image-from-above.jpg");
+  background-image: url("../../images/desktop/image-from-above.jpg");
 }
 
 .borealis {
-  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  background-image: url("../../images/desktop/image-pocket-borealis.jpg");
 }
 
 .curiosity {
-  background-image: url("../images/desktop/image-curiosity.jpg");
+  background-image: url("../../images/desktop/image-curiosity.jpg");
 }
 
 .fisheye {
-  background-image: url("../images/desktop/image-fisheye.jpg");
+  background-image: url("../../images/desktop/image-fisheye.jpg");
 }
 
 @media (max-width:1200px) {
@@ -160,7 +160,7 @@
   .list-item {
     width: initial;
     height: 240px;
-    background-image: url("../images/mobile/image-deep-earth.jpg");
+    background-image: url("../../images/mobile/image-deep-earth.jpg");
     background-size: cover;
   }
 
@@ -185,31 +185,31 @@
 
   /* Card Itens Bg*/
   .night {
-    background-image: url("../images/mobile/image-night-arcade.jpg");
+    background-image: url("../../images/mobile/image-night-arcade.jpg");
   }
 
   .soccer {
-    background-image: url("../images/mobile/image-soccer-team.jpg");
+    background-image: url("../../images/mobile/image-soccer-team.jpg");
   }
 
   .thegrid {
-    background-image: url("../images/mobile/image-grid.jpg");
+    background-image: url("../../images/mobile/image-grid.jpg");
   }
 
   .fromup {
-    background-image: url("../images/mobile/image-from-above.jpg");
+    background-image: url("../../images/mobile/image-from-above.jpg");
   }
 
   .borealis {
-    background-image: url("../images/mobile/image-pocket-borealis.jpg");
+    background-image: url("../../images/mobile/image-pocket-borealis.jpg");
   }
 
   .curiosity {
-    background-image: url("../images/mobile/image-curiosity.jpg");
+    background-image: url("../../images/mobile/image-curiosity.jpg");
   }
 
   .fisheye {
-    background-image: url("../images/mobile/image-fisheye.jpg");
+    background-image: url("../../images/mobile/image-fisheye.jpg");
   }
 
 

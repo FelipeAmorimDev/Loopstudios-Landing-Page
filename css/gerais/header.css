@@ -2,7 +2,7 @@
 .header-bg{
   height: 100%;
   width: 100%;
-  background-image: url("../images/desktop/image-hero.jpg");
+  background-image: url("../../images/desktop/image-hero.jpg");
   background-position: top right;
   background-size: cover;
 }
@@ -31,7 +31,7 @@
 
 .menu-hb{
   display: none;
-  background-image: url("../images/icon-hamburger.svg");
+  background-image: url("../../images/icon-hamburger.svg");
   background-size: auto;
   background-color: transparent;
   width: 24px;
