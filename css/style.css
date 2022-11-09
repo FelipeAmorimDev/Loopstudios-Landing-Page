@@ -50,7 +50,7 @@ a{
 .header-container{
   max-width: 1120px;
   margin: 0 auto;
-  padding: 64px 30px 146px 30px;
+  padding: 64px 24px 146px 24px;
 }
 
 .top-header{
@@ -80,6 +80,7 @@ a{
   padding: 40px;
   border: 2px solid white;
 }
+
 @media (max-width:800px){
   .menu-hb{
   display: block;
@@ -204,6 +205,7 @@ a{
     align-items: center;
     padding: 0px 60px;
     margin-bottom: 96px;
+    
   }
   picture img{
     width:100%
@@ -230,7 +232,7 @@ a{
  @media (max-width:600px){
 
   .sobre-empresa{
-    padding: 0px 30px 0px 30px;
+    padding: 0px 24px 0px 24px;
   }
   .sobre-empresa picture{
   max-width: 327px;
@@ -242,6 +244,9 @@ a{
     }
   .sobre-empresa-texto{
     padding: 0px;
+  }
+  .sobre-empresa p{
+    max-width: 30ch;
   }
   
   .main{
@@ -258,7 +263,7 @@ a{
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 0px 20px;
+  padding: 0px 24px;
  }
 
  .list-item{
