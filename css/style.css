@@ -88,7 +88,7 @@ a{
   padding: 40px 40px 2px 40px;
   border: 2px solid white;
 }
-.header-container a::after{
+.header-container .nav a::after{
   content: "";
   width: 0px;
   height: 2px;
@@ -96,7 +96,7 @@ a{
   display: block;
   margin: 0 auto;
 }
-.header-container  a:hover::after{
+.header-container  .nav a:hover::after{
   transition: width .3s;
   width: 50%;
 }
