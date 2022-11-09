@@ -1,0 +1,94 @@
+/* Header */
+.header-bg{
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-position: top right;
+  background-size: cover;
+}
+
+.header-mask{
+  background-color: rgba(2, 2, 2, 0.4);
+  transition: .3s;
+}
+
+.header-container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 24px 146px 24px;
+}
+
+.top-header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.top-header .nav-list{
+  display: flex;
+  gap: 32px;
+}
+
+.menu-hb{
+  display: none;
+  background-image: url("../images/icon-hamburger.svg");
+  background-size: auto;
+  background-color: transparent;
+  width: 24px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-container p{
+  max-width: 12ch;
+  text-transform: uppercase;
+  margin-top: 130px;
+  padding: 40px 40px 2px 40px;
+  border: 2px solid white;
+}
+
+.header-container .nav a::after{
+  content: "";
+  width: 0px;
+  height: 2px;
+  background:#fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-container  .nav a:hover::after{
+  transition: width .3s;
+  width: 50%;
+}
+
+@media (max-width:800px){
+
+  .menu-hb{
+  display: block;
+  }
+  .nav{
+    display: none;
+  }
+  .header-container p{
+    margin: 163px auto 0px auto;
+  }
+  .header-bg{
+    background-size: cover;
+    background-position: center;
+  }
+  .header-container p{
+    padding: 16px;
+  }
+
+}
+@media (max-width:375px){
+
+  .header-bg{
+  min-height: 100vh;
+  }
+  .header-mask{
+    height: 100vh;
+  }
+  
+}

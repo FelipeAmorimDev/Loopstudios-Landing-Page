@@ -1,0 +1,165 @@
+/* Sobre Empresa */
+.main {
+  margin: 150px 0px 184px 0px;
+}
+
+.sobre-empresa {
+  max-width: 1120px;
+  margin: 0 auto 180px auto;
+  display: grid;
+  grid-template-columns: minmax(auto, 6fr) 3fr;
+  padding: 0px 80px 0px 0px;
+  transition: .5s;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.sobre-empresa picture {
+  max-width: 654px;
+}
+
+.container-txt {
+  position: relative;
+
+}
+
+.sobre-empresa-texto {
+  max-width: 450px;
+  padding-top: 96px;
+  padding-left: 96px;
+  position: absolute;
+  bottom: -1px;
+  left: -230px;
+  background-color: rgb(255, 255, 255);
+}
+
+.sobre-empresa-texto h1 {
+  text-transform: uppercase;
+  max-width: 20ch;
+}
+
+.sobre-empresa-texto p {
+  max-width: 46ch;
+  mix-blend-mode: normal;
+  /* Dar uma estudada nessa propriedade */
+  opacity: 0.5;
+}
+
+@media (max-width:1300px) {
+
+  .sobre-empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-empresa-texto {
+    bottom: -70px;
+    left: 500px;
+  }
+
+}
+
+@media (max-width:1240px) {
+
+  .sobre-empresa-texto {
+    left: 250px;
+    transition: .5s;
+  }
+
+}
+
+@media (max-width:1180px) {
+
+  .sobre-empresa {
+    padding-left: 200px;
+  }
+
+  .sobre-empresa-texto {
+    padding: 40px;
+    left: 150px;
+  }
+
+}
+
+@media (max-width:1050px) {
+
+  .sobre-empresa {
+    padding: 0px 120px;
+  }
+
+  .sobre-empresa-texto {
+    padding: 40px;
+    left: 150px;
+  }
+
+}
+
+@media (max-width:900px) {
+
+  .sobre-empresa-texto {
+    left: 50px;
+  }
+
+}
+
+@media (max-width:860px) {
+
+  .sobre-empresa {
+    align-items: center;
+    padding: 0px 60px;
+    margin-bottom: 96px;
+  }
+
+  picture img {
+    width: 100%
+  }
+
+  .sobre-empresa-texto {
+    position: initial;
+    text-align: center;
+    align-self: center;
+    max-width: initial;
+    padding-bottom: 0px;
+  }
+
+  .sobre-empresa-texto p {
+    margin: 0 auto;
+  }
+
+  .sobre-empresa-texto h1 {
+    margin: 8px auto 16px;
+  }
+
+  .main {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width:600px) {
+
+  .sobre-empresa {
+    padding: 0px 24px 0px 24px;
+  }
+
+  .sobre-empresa picture {
+
+    margin: 0 auto;
+
+  }
+
+  .sobre-empresa-texto h1 {
+    margin: 48px auto 16px auto;
+  }
+
+  .sobre-empresa-texto {
+    padding: 0px;
+  }
+
+  .sobre-empresa p {
+    max-width: 30ch;
+  }
+
+  .main {
+    margin-top: 109px;
+    margin-bottom: 109px;
+  }
+}

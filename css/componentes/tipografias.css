@@ -1,21 +1,21 @@
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-.font-1-xxl-h{
+.font-1-xxl-h {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 4.5rem;
   line-height: 1;
 }
 
-.font-1-xxl-m{
+.font-1-xxl-m {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 3rem;
   line-height: 1;
 }
 
-.font-1-xl{
+.font-1-xl {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 2rem;
@@ -23,14 +23,14 @@ font-family: 'Josefin Sans', sans-serif; */
 }
 
 
-.font-2-m{
+.font-2-m {
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   font-size: 0.94rem;
   line-height: 1.666;
 }
 
-.font-2-s{
+.font-2-s {
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   font-size: 0.87rem;
@@ -38,14 +38,15 @@ font-family: 'Josefin Sans', sans-serif; */
   letter-spacing: 5px;
 }
 
-@media (max-width:600px){
-  .font-1-xxl-h{
-  font-size: 2.5rem;
-  
+@media (max-width:600px) {
+  .font-1-xxl-h {
+    font-size: 2.5rem;
+
   }
-  .font-1-xxl-m{
-   
+
+  .font-1-xxl-m {
+
     font-size: 2rem;
-    
+
   }
 }
