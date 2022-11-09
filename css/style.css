@@ -34,6 +34,7 @@ img{
 a{
   color:inherit;
   text-decoration: none;
+  display: block;
   
 }
 
@@ -43,6 +44,7 @@ a{
   background-image: url("../images/desktop/image-hero.jpg");
   background-position: top right;
   background-size: cover;
+  transition: .3s;
 }
 
 .header-container{
@@ -87,6 +89,13 @@ a{
   }
   .header-container p{
     margin: 163px auto 0px auto;
+  }
+  .header-bg{
+    background-size: cover;
+    background-position: center;
+  }
+  .header-container p{
+    padding: 16px;
   }
 }
 /* Sobre Empresa */
@@ -212,12 +221,32 @@ a{
    .sobre-empresa-texto h1{
     margin: 8px auto 16px;
     }
+
+    .main{
+      margin-bottom: 0px;
+    }
  }
 
  @media (max-width:600px){
+
+  .sobre-empresa{
+    padding: 0px 30px 0px 30px;
+  }
   .sobre-empresa picture{
   max-width: 327px;
   margin: 0 auto ;
+  
+  }
+  .sobre-empresa-texto h1{
+    margin: 48px auto 16px auto;
+    }
+  .sobre-empresa-texto{
+    padding: 0px;
+  }
+  
+  .main{
+    margin-top: 109px;
+    margin-bottom: 109px;
   }
  }
 
@@ -238,7 +267,7 @@ a{
   background-image: url("../images/desktop/image-deep-earth.jpg");
   display: flex;
   cursor: pointer;
-  transition: .3s;
+  transition: .6s;
   
 }
 
@@ -252,7 +281,7 @@ a{
 
 .bg-hover{
   width: 0px;
-  height: 450px;
+  min-height: 450px;
   position: absolute;
   background-color: #ffffffb9;
   top: 0;
@@ -267,8 +296,8 @@ a{
 
 .bg-opacity:hover .bg-hover{
   visibility: visible;
-  height: 450px;
-  width: 256px;
+  
+  width: 260px;
   cursor: pointer;
 }
 
@@ -298,6 +327,8 @@ a{
   background-color: black;
   color: white;
  }
+
+ 
  /* Bg Itens */
 
  .deep h3{
@@ -346,6 +377,7 @@ a{
   .bg-opacity{
     place-self: center;
   }
+}
 
   @media (max-width:860px) {
     .nossa-criacao{
@@ -353,20 +385,22 @@ a{
       grid-template-columns: minmax(100px,1fr);
       justify-items: center;
     }
+    
     .nossa-criacao a{
       grid-column: 1;
       order: 20;
       place-self: center;
     }
+
     .nossa-criacao h2{
       grid-column: 1;
      }
+
      .list-item{
       width:initial;
-      height: initial;
+      height: 240px;
       background-image: url("../images/mobile/image-deep-earth.jpg");
-      min-height: 240px;
-      
+      background-size: cover;
     }
 
     .bg-opacity{
@@ -376,12 +410,15 @@ a{
       height: initial;
       max-width: initial;
     }
+    .bg-hover{
+      width: 0px;
+      min-height: 240px;
+    }
  
     .bg-opacity:hover .bg-hover{
       visibility: visible;
-      width: 654px;
-      height: 240px;
-      cursor: pointer;
+      width: 100%;
+      
     }
 
     /* Card Itens Bg*/
@@ -415,7 +452,32 @@ a{
 
 
   }
- }
+
+  @media (max-width:600px){
+    .nossa-criacao a{
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
+    .list-item{
+      background-size: cover;
+      height: 120px;
+      min-height: initial;
+    }
+
+    .list-item h3{
+      padding: 20px;
+    }
+
+  
+  .nossa-criacao h2 {
+    margin-bottom: 18px;
+    }
+    .bg-hover{
+      min-height: 120px;
+    } 
+  
+  }
+
 
  /* Footer */
 
