@@ -39,7 +39,7 @@
   background-image: url("../../images/icon-hamburger.svg");
   background-size: cover;
   background-color: transparent;
-  width: 20px;
+  width: 24px;
   height: 20px;
   border: none;
   cursor: pointer;
@@ -52,7 +52,7 @@
   max-width: 12ch;
   text-transform: uppercase;
   margin-top: 130px;
-  padding: 40px 40px 2px 40px;
+  padding: 40px 40px 22px 40px;
   border: 2px solid white;
 }
 
@@ -119,15 +119,19 @@
 
   .header-container p {
     margin: 163px auto 0px auto;
+    padding: 16px 16px 0px;
   }
 
   .header-bg {
     background-size: cover;
     background-position: center;
   }
+}
+
+@media (max-width:600px) {
 
   .header-container p {
-    padding: 16px;
+    padding: 10px 16px 0px;
   }
 
 }
@@ -140,6 +144,10 @@
 
   .header-mask {
     height: 100vh;
+  }
+
+  .header-container p {
+    padding: 10px 16px 0px;
   }
 
 }
