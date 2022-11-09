@@ -37,3 +37,10 @@ font-family: 'Josefin Sans', sans-serif; */
   line-height: 1;
   letter-spacing: 5px;
 }
+
+@media (max-width:600px){
+  .font-1-xxl-h{
+  font-size: 2.5rem;
+  
+  }
+}

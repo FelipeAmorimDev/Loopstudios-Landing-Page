@@ -61,7 +61,16 @@ a{
   display: flex;
   gap: 32px;
 }
-
+.menu-hb{
+  display: none;
+  background-image: url("../images/icon-hamburger.svg");
+  background-size: auto;
+  background-color: transparent;
+  width: 24px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+}
 .header-container p{
   max-width: 12ch;
   text-transform: uppercase;
@@ -69,7 +78,17 @@ a{
   padding: 40px;
   border: 2px solid white;
 }
-
+@media (max-width:800px){
+  .menu-hb{
+  display: block;
+  }
+  .nav{
+    display: none;
+  }
+  .header-container p{
+    margin: 163px auto 0px auto;
+  }
+}
 /* Sobre Empresa */
 .main{
   margin: 150px 0px 184px 0px;
@@ -81,8 +100,15 @@ a{
   margin: 0 auto 180px auto;
   display: grid;
   grid-template-columns:minmax(auto,6fr) 3fr;
-  padding: 0px 80px 0px 160px;
+  padding: 0px 80px 0px 0px;
   transition: .5s;
+  box-sizing: border-box;
+  justify-content: center;
+ 
+}
+
+.sobre-empresa picture{
+  max-width: 654px;
 }
 
 .container-txt{
@@ -188,6 +214,13 @@ a{
     }
  }
 
+ @media (max-width:600px){
+  .sobre-empresa picture{
+  max-width: 327px;
+  margin: 0 auto;
+  }
+ }
+
  /* Nossas Criacoes */
 
  .nossa-criacao{
@@ -205,6 +238,7 @@ a{
   background-image: url("../../images/desktop/image-deep-earth.jpg");
   display: flex;
   cursor: pointer;
+  transition: .3s;
   
 }
 
@@ -213,15 +247,18 @@ a{
 }
 .bg-opacity{
   position: relative;
+  max-width: 256px;
 }
 
 .bg-hover{
-  width: 256px;
+  width: 0px;
   height: 450px;
   position: absolute;
   background-color: #ffffffb9;
   top: 0;
-  display: none;
+  visibility: hidden;
+  transition:ease-in .3s; 
+  
 }
 
 .bg-opacity:hover{
@@ -229,7 +266,9 @@ a{
 }
 
 .bg-opacity:hover .bg-hover{
-  display: block;
+  visibility: visible;
+  height: 450px;
+  width: 256px;
   cursor: pointer;
 }
 
@@ -252,54 +291,66 @@ a{
   grid-column: 4;
   place-self: center end;
   margin-bottom: 50px;
+  transition: ease-in-out .3s;
+ }
+
+ .nossa-criacao a:hover{
+  background-color: black;
+  color: white;
  }
  /* Bg Itens */
-div.list-item:first-of-type h3{
- max-width: 8ch;
-}
 
-div.list-item:nth-of-type(2){
+ .deep h3{
+  max-width: 8ch;
+ }
+
+ .night{
   background-image: url("../images/desktop/image-night-arcade.jpg");
  }
 
- div.list-item:nth-of-type(3){
+ .soccer{
   background-image: url("../images/desktop/image-soccer-team.jpg");
  }
 
- div.list-item:nth-of-type(4){
+ .thegrid{
   background-image: url("../images/desktop/image-grid.jpg");
  }
- div.list-item:nth-of-type(4) h3{
-  max-width: 5ch;
+ .thegrid h3{
+  max-width: 6ch;
  }
 
- div.list-item:nth-of-type(5){
+.fromup{
   background-image: url("../images/desktop/image-from-above.jpg");
- }
+}
 
- div.list-item:nth-of-type(6){
+.borealis{
   background-image: url("../images/desktop/image-pocket-borealis.jpg");
- }
+}
 
- div.list-item:nth-of-type(7){
+.curiosity{
   background-image: url("../images/desktop/image-curiosity.jpg");
- }
+}
 
- div.list-item:last-child{
+.fisheye{
   background-image: url("../images/desktop/image-fisheye.jpg");
- }
+}
 
  @media (max-width:1200px){
   .nossa-criacao{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(256px,1fr) minmax(256px,1fr) minmax(256px,1fr);
+    gap: 20px 0px;
   }
   .nossa-criacao a{
     grid-column: 3;
   }
+  .bg-opacity{
+    place-self: center;
+  }
 
   @media (max-width:860px) {
     .nossa-criacao{
-      grid-template-columns: 1fr;
+
+      grid-template-columns: minmax(100px,1fr);
       justify-items: center;
     }
     .nossa-criacao a{
@@ -311,10 +362,110 @@ div.list-item:nth-of-type(2){
       grid-column: 1;
      }
      .list-item{
-      width: 654px;
-      height: 240px;
+      width:initial;
+      height: initial;
       background-image: url("../../images/mobile/image-deep-earth.jpg");
+      min-height: 240px;
+      
     }
 
+    .bg-opacity{
+      display: grid;
+      width: initial;
+      width: 100%;
+      height: initial;
+      max-width: initial;
+    }
+ 
+    .bg-opacity:hover .bg-hover{
+      visibility: visible;
+      width: 654px;
+      height: 240px;
+      cursor: pointer;
+    }
+
+    /* Card Itens Bg*/
+    .night{
+      background-image: url("../images/mobile/image-night-arcade.jpg");
+     }
+    
+     .soccer{
+      background-image: url("../images/mobile/image-soccer-team.jpg");
+     }
+    
+     .thegrid{
+      background-image: url("../images/mobile/image-grid.jpg");
+     }
+    
+    .fromup{
+      background-image: url("../images/mobile/image-from-above.jpg");
+    }
+    
+    .borealis{
+      background-image: url("../images/mobile/image-pocket-borealis.jpg");
+    }
+    
+    .curiosity{
+      background-image: url("../images/mobile/image-curiosity.jpg");
+    }
+    
+    .fisheye{
+      background-image: url("../images/mobile/image-fisheye.jpg");
+    }
+
+
   }
+ }
+
+ /* Footer */
+
+ .footer-bg{
+  background-color: black;
+ }
+
+ .footer-container{
+  
+  max-width: 1120px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  gap: 24px;
+  padding: 44px 20px;
+ }
+
+ .redes-sociais{
+  display: flex;
+  gap: 16px;
+  place-self: end;
+}
+
+ .nav-footer .nav-list{
+  display: flex;
+  gap: 32px;
+ }
+
+ .nav-footer p{
+  color: rgba(255, 255, 255, 0.045);
+  
+ }
+
+ @media (max-width:800px){
+  .footer-container{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .redes-sociais{
+    place-self: initial;
+    grid-row: 3;
+  }
+  .nav-footer .nav-list{
+  flex-direction: column;
+  order: -2;
+  gap: 16px;
+
+  }
+
+
  }

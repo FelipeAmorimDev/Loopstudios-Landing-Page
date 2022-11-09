@@ -3,6 +3,8 @@
   --color-p2:hsl(0, 0%, 0%);
   --color-p3:hsl(0, 0%, 55%);
   --color-p4:hsl(0, 0%, 41%);
+
+  --color-p5:rgba(255, 255, 255, 0.3);
 }
 
 .color-p1{
@@ -21,8 +23,6 @@
   color:var(--color-p4)
 }
 
-.list-item{
-  width: 256px;
-  height: 450px;
-  background-image: url("../../images/desktop/image-deep-earth.jpg");
+.color-p5{
+  color:var(--color-p5)
 }
