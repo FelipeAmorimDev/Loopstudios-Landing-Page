@@ -217,7 +217,7 @@ a{
  @media (max-width:600px){
   .sobre-empresa picture{
   max-width: 327px;
-  margin: 0 autogit ;
+  margin: 0 auto ;
   }
  }
 
