@@ -20,3 +20,9 @@
 .color-p4{
   color:var(--color-p4)
 }
+
+.list-item{
+  width: 256px;
+  height: 450px;
+  background-image: url("../../images/desktop/image-deep-earth.jpg");
+}
